@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Reddit Klon</title>
+    <link rel="stylesheet" href="reddit.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar -->
+        <div class="navbar">
+            <img src="https://static-00.iconduck.com/assets.00/reddit-fill-logo-icon-2048x2048-lhgwkdq9.png" width="50">
+        </div>
+
+        <!-- Postbar -->
+        <div class="postbar">
+            <input type="text" id="title" placeholder="Titel">
+            <textarea id="content" placeholder="Innehåll"></textarea>
+            <button onclick="addPost()" id="button">Skapa Inlägg</button>
+        </div>
+
+        <!-- Posts Container -->
+        <div id="posts-container">
+            <div id="posts"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
